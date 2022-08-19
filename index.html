@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <u> <h2 class="heading" >FIND EVEN OR ODD NUMBER </h2></u>
+       <u> <label class="labelno" >Enter Number   </label>   <br></u>
+       <br>
+        <input type="number" name="" id="oddeven" onkeyup="isCheck()"><span id="showmsg"></span>
+    
+        <script>
+    
+            function isCheck(){
+                let num = document.getElementById("oddeven").value;
+                if((num % 2) === 0){
+                    document.getElementById("showmsg").
+                innerHTML = "  this Number "+num+" is an even number";       
+                }        
+                else{
+                    document.getElementById("showmsg").
+                innerHTML = "  this Number "+num+" is not an even number";
+                }
+    
+                if (num == ""){
+                    document.getElementById("showmsg").
+                innerHTML = "";
+                }
+    
+            }
+    
+        </script>
+        
+        <style>
+            .heading{
+               text-align:center;
+             
+            }
+            .labelno{
+                font-size: 25px;
+                
+            }
+        </style>
+    
+    
+    
+    
+   
+</body>
+</html>
